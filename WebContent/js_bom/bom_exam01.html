@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function sale() {
+			price = 12900;
+			x = myform.box.value;
+			r = price-(price*x)/100;
+			document.getElementById("result").innerHTML = "<h1>"+r+"</h1>";
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<label>수량</label>
+		<input type="text" name="box" onkeyup="sale()">
+	</form>
+	<div id="result" style="color: red;"></div>
+</body>
+</html>
